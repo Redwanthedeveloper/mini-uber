@@ -35,8 +35,7 @@ const LoginScreen = () => {
       .signInWithPopup(provider)
       .then((result) => {
         console.log(result);
-        const credential = result.credential;
-        const token = credential.accessToken;
+
         const { displayName, email, photoURL } = result.user;
         const signedInUser = {
           isLoggedIn: true,
@@ -57,8 +56,6 @@ const LoginScreen = () => {
       .auth()
       .signInWithEmailAndPassword(email, password)
       .then((result) => {
-        const credential = result.credential;
-        const token = credential.accessToken;
         const { displayName, email, photoURL } = result.user;
         const signedInUser = {
           isLoggedIn: true,

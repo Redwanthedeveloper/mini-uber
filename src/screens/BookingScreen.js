@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useHistory, useLocation, useParams } from 'react-router-dom';
-import { Form, Row, Col, Container, Button, Image } from 'react-bootstrap';
+import { Form, Row, Col, Container, Image } from 'react-bootstrap';
 import Data from '../data/Data';
 import GoogleMapReact from 'google-map-react';
 
@@ -8,7 +8,6 @@ const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 const BookingScreen = () => {
   const { id } = useParams();
-  const history = useHistory();
   const location = useLocation();
 
   const service = location.search

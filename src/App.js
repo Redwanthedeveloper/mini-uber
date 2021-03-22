@@ -7,7 +7,7 @@ import SignupScreen from './screens/SignupScreen';
 import Dashboard from './screens/Dashboard';
 import BookingScreen from './screens/BookingScreen';
 import PrivateRoute from './components/PrivateRoute';
-import { createContext, useContext, useState } from 'react';
+import { createContext, useState } from 'react';
 
 export const UserContext = createContext();
 
